@@ -4,5 +4,11 @@
 	// 25 ===> 30
 	// 37 ===> 40
  function closestMultipleOf10(num) {
- 	//your code is here
+ 	newNum = num.toString()
+ 	arr = newNum.split("")
+ 	if(arr[1] < 5){
+ 		arr[1] = 0;
+ 	} 
+ 	var str = arr.join("")
+ 	return Number(str)
  }
